@@ -67,8 +67,7 @@ public class AddCustomerPage {
 	public void custDob(String dd, String mm, String yyyy) {
 		txtDob.sendKeys(dd);
 		txtDob.sendKeys(mm);
-		txtDob.sendKeys(yyyy);
-		
+		txtDob.sendKeys(yyyy);		
 	}
 	
 	public void custAddr(String caddress) {

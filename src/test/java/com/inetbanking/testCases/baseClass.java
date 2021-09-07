@@ -28,7 +28,7 @@ public class baseClass {
 	public String baseUrl = readconfig.getApplicationURL();
 	public String username = readconfig.getUsername();
 	public String password = readconfig.getPassword();
-
+	
 
 	public static WebDriver driver;
 
@@ -40,7 +40,7 @@ public class baseClass {
 		if(br.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+			driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
 		}
 
 		if(br.equals("firefox")) {
@@ -56,11 +56,7 @@ public class baseClass {
 		}		
 		driver.manage().window().maximize();
 		driver.get(baseUrl);
-
-
 	}
-
-
 
 	@AfterClass
 	public void teardown() {
@@ -70,15 +66,12 @@ public class baseClass {
 
 	public void captureScreen(WebDriver driver, String tname) throws IOException { 
 		
-		/*String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); 
-		String screenShotName = tname+"-"+timeStamp;*/
-		
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm").format(new Date()); 
+		String screenShotName = tname+"-"+timeStamp;
 		TakesScreenshot ts =(TakesScreenshot) driver; 
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir")+"/Screenshots/"+tname+".png";
-		File finalDestination = new File(destination);
-		FileUtils.copyFile(source, finalDestination); 
-		
+		File target = new File(System.getProperty("user.dir")+"\\Screenshots\\"+screenShotName+".png");
+		FileUtils.copyFile(source, target); 	
 		 
 	}
 

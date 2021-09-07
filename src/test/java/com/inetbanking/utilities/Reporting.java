@@ -1,6 +1,7 @@
 package com.inetbanking.utilities;
 
 //Listener class used to generate Extent reports and capture failed test screenshots
+//The ExtentHtmlReporter creates a rich standalone HTML file.It allows several configuration options via the config() method.
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -25,30 +26,30 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Reporting extends TestListenerAdapter {
 	
-	WebDriver driver = null;
+	public WebDriver driver;
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest logger;
+	
 	
 	public void onStart(ITestContext testContext) {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		String repName = "Test-Report-"+timeStamp+".html";
 		
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/"+repName);
-		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"./extent-config.xml");
-		
-		extent = new ExtentReports();
-		
-		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("hostname", "localhost");
-		extent.setSystemInfo("Env", "QA");
-		extent.setSystemInfo("user", "samsul");
+		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
 		
 		htmlReporter.config().setDocumentTitle("Inet Banking Test Project"); //Title of Report
 		htmlReporter.config().setReportName("Functional Automation Test Report"); //Name of Report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //Chart Location of Report
 		htmlReporter.config().setTheme(Theme.DARK); //Teme of Report
 		
+		extent = new ExtentReports();
+		
+		extent.attachReporter(htmlReporter);
+		extent.setSystemInfo("hostname", "localhost");
+		extent.setSystemInfo("Env", "QA");
+		extent.setSystemInfo("user", "samsul");		
 	}
 	
 	public void onTestSuccess(ITestResult tr) {
@@ -60,19 +61,19 @@ public class Reporting extends TestListenerAdapter {
 		logger=extent.createTest(tr.getName());
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 		
-		String ScreenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm").format(new Date()); 
+		String screenShotName = tr.getName()+"-"+timeStamp;
+		String ScreenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+screenShotName+".png";
 		
 		File f = new File(ScreenshotPath);
-		
 		if(f.exists()) {
 			try {
 				logger.fail("Screenshot is below: " + logger.addScreenCaptureFromPath(ScreenshotPath));
-				
-			}
-			catch(IOException e) {
-				e.printStackTrace();
+			} catch (IOException e1) {
+				e1.printStackTrace();
 			}
 		}
+		
 	}
 	
 	public void onTestSkipped(ITestResult tr) {

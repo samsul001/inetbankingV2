@@ -12,15 +12,15 @@ import com.inetbanking.utilities.XLUtils;
 public class TC_loginDDT_003 extends baseClass{
 	
 	@Test(dataProvider="TestData")
-	public void loginDDT3(String user, String pwf) throws IOException {
+	public void loginDDT3(String user, String pwd) throws IOException {
 		LoginPage lp = new LoginPage(driver);
 		
 		lp.setUserName(user);
-		lp.setPassword(pwf);
+		lp.setPassword(pwd);
 		lp.clickSubmit();
 		
 		if(isAlertPresent()==true) {
-			captureScreen(driver, "loginDDT2_003");
+			captureScreen(driver, "loginDDT3");
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
 			Assert.assertTrue(false);
@@ -52,7 +52,7 @@ public class TC_loginDDT_003 extends baseClass{
 		String path = System.getProperty("user.dir")+"/src/test/java/com/inetbanking/testData/TestData.xlsx";
 		
 		int rowCount = XLUtils.getRowCount(path, "Sheet1");
-		int colCount = XLUtils.getColCount(path, "Sheet1", 1);
+		int colCount = XLUtils.getColCount(path, "Sheet1", 0);
 		
 		String TestData[][] = new String[rowCount][colCount];
 		

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="72.636" tests="10" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="8.139" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="inetBankingV2_MavenProject"/>
-    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/2/display/redirect?page=tests"/>
+    <property name="RUN_TESTS_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/4/display/redirect?page=tests"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="NUMBER_OF_PROCESSORS" value="4"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="JENKINS_HOME" value="C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins"/>
     <property name="HUDSON_SERVER_COOKIE" value="a3ed5855c1bc2a90"/>
+    <property name="POM_ARTIFACTID" value="inetbankingV2"/>
     <property name="os.name" value="Windows 8.1"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="sun.desktop" value="windows"/>
     <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="inetBankingV2"/>
     <property name="NODE_LABELS" value="master"/>
     <property name="TEMP" value="C:\Users\SAMSUL~1\AppData\Local\Temp"/>
     <property name="java.runtime.version" value="1.8.0_291-b10"/>
@@ -25,8 +27,8 @@
     <property name="ProgramFiles" value="C:\Program Files"/>
     <property name="user.language" value="en"/>
     <property name="JOB_BASE_NAME" value="inetBankingV2_MavenProject"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/2/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#2"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/4/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#4"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
     <property name="LOCALAPPDATA" value="C:\Users\SaMsuL LiViC\AppData\Local"/>
     <property name="java.version" value="1.8.0_291"/>
@@ -37,7 +39,7 @@
     <property name="MOZ_PLUGIN_PATH" value="C:\PROGRAM FILES (X86)\FOXIT SOFTWARE\FOXIT READER\plugins\"/>
     <property name="NODE_NAME" value="master"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
-    <property name="BUILD_ID" value="2"/>
+    <property name="BUILD_ID" value="4"/>
     <property name="PyCharm Community Edition" value="C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -52,9 +54,10 @@
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="os.version" value="6.3"/>
-    <property name="RUN_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/2/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/4/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="TMP" value="C:\Users\SAMSUL~1\AppData\Local\Temp"/>
-    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/2/display/redirect?page=artifacts"/>
+    <property name="RUN_ARTIFACTS_DISPLAY_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/4/display/redirect?page=artifacts"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.version" value="25.291-b10"/>
     <property name="user.variant" value=""/>
@@ -67,12 +70,14 @@
     <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
     <property name="ComSpec" value="C:\WINDOWS\system32\cmd.exe"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="SERVICE_ID" value="jenkins"/>
-    <property name="COMPUTERNAME" value="SAMSUL_ALAM"/>
+    <property name="POM_PACKAGING" value="jar"/>
     <property name="user.script" value=""/>
-    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="COMPUTERNAME" value="SAMSUL_ALAM"/>
+    <property name="SERVICE_ID" value="jenkins"/>
+    <property name="POM_GROUPID" value="inetbankingV2"/>
     <property name="user.home" value="C:\Users\SaMsuL LiViC"/>
-    <property name="BUILD_TAG" value="jenkins-inetBankingV2_MavenProject-2"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-inetBankingV2_MavenProject-4"/>
     <property name="JENKINS_SERVER_COOKIE" value="a3ed5855c1bc2a90"/>
     <property name="HUDSON_URL" value="http://localhost:8081/"/>
     <property name="ProgramData" value="C:\ProgramData"/>
@@ -80,14 +85,14 @@
     <property name="USERPROFILE" value="C:\Users\SaMsuL LiViC"/>
     <property name="CLASSPATH" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\apache-maven-3.6.3\/bin;C:\Program Files\Java\jdk1.8.0_291\/bin;C:\Program Files\Java\jdk1.8.0_291\/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools\bin;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\workspace_selenium\SeleniumTest1\drivers\chrmoedriver;D:\workspace_selenium\SeleniumTest1\drivers\geckodrivers;D:\workspace_selenium\SeleniumTest1\drivers\IEDrivers;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\index\Python;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\plugins\python-ce\helpers\typeshed\scripts;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin;C:\apache-maven-3.6.3\\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jdk1.8.0_291\lib;C:\Program Files\Java\jdk1.8.0_291;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\apache-maven-3.6.3\/bin;C:\Program Files\Java\jdk1.8.0_291\/bin;C:\Program Files\Java\jdk1.8.0_291\/bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools\bin;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\drivers\chrmoedriver;D:\drivers\geckodrivers;D:\drivers\IEDrivers;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\index\Python;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\plugins\python-ce\helpers\typeshed\scripts;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin\;C:\apache-maven-3.6.3\\bin;C:\apache-maven-3.6.3\;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jdk1.8.0_291\lib;C:\Program Files\Java\jdk1.8.0_291;C:\Program Files\Java\jdk1.8.0_291\lib;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin;."/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="APPDATA" value="C:\Users\SaMsuL LiViC\AppData\Roaming"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="C:\apache-maven-3.6.3"/>
     <property name="java.class.path" value="C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;C:\apache-maven-3.6.3/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\apache-maven-3.6.3\ C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\war\WEB-INF\lib\remoting-4.7.jar C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 58298"/>
-    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_291\/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools\bin;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\workspace_selenium\SeleniumTest1\drivers\chrmoedriver;D:\workspace_selenium\SeleniumTest1\drivers\geckodrivers;D:\workspace_selenium\SeleniumTest1\drivers\IEDrivers;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\index\Python;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\plugins\python-ce\helpers\typeshed\scripts;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin;C:\apache-maven-3.6.3\\bin;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jdk1.8.0_291\lib;C:\Program Files\Java\jdk1.8.0_291;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\apache-maven-3.6.3\ C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\war\WEB-INF\lib\remoting-4.10.jar C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 54984"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_291\/bin;C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools\bin;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\tools;C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\drivers\chrmoedriver;D:\drivers\geckodrivers;D:\drivers\IEDrivers;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\index\Python;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\plugins\python-ce\helpers\typeshed\scripts;C:\Program Files\Git\cmd;C:\apache-maven-3.6.3\bin\;C:\apache-maven-3.6.3\\bin;C:\apache-maven-3.6.3\;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jdk1.8.0_291\lib;C:\Program Files\Java\jdk1.8.0_291;C:\Program Files\Java\jdk1.8.0_291\lib;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\SaMsuL LiViC\AppData\Local\Programs\Python\Python39\;C:\Program Files\Java\jre1.8.0_291\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3.2\bin"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PROCESSOR_ARCHITECTURE" value="AMD64"/>
     <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_291\/bin"/>
@@ -103,7 +108,7 @@
     <property name="HUDSON_HOME" value="C:\Users\SaMsuL LiViC\AppData\Local\Jenkins\.jenkins"/>
     <property name="PATH+MAVEN" value="C:\apache-maven-3.6.3\/bin"/>
     <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
-    <property name="BUILD_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/2/"/>
+    <property name="BUILD_URL" value="http://localhost:8081/job/inetBankingV2_MavenProject/4/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
@@ -115,7 +120,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="C:\apache-maven-3.6.3\"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="2"/>
+    <property name="BUILD_NUMBER" value="4"/>
     <property name="BASE" value="C:\Program Files\Jenkins"/>
     <property name="ANDROID_HOME" value="C:\Users\SaMsuL LiViC\AppData\Local\Android\Sdk"/>
     <property name="JENKINS_URL" value="http://localhost:8081/"/>
@@ -133,14 +138,9 @@
     <property name="PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\"/>
     <property name="easyplussdk" value="&quot;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin&quot;"/>
   </properties>
-  <testcase name="logintest" classname="com.inetbanking.testCases.TC_LoginTest_001" time="9.567"/>
-  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="15.464"/>
-  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="12.641"/>
-  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="17.519"/>
-  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="13.767"/>
-  <testcase name="loginDDT3" classname="com.inetbanking.testCases.TC_loginDDT_003" time="15.673"/>
-  <testcase name="loginDDT3" classname="com.inetbanking.testCases.TC_loginDDT_003" time="13.378"/>
-  <testcase name="loginDDT3" classname="com.inetbanking.testCases.TC_loginDDT_003" time="12.286"/>
-  <testcase name="loginDDT3" classname="com.inetbanking.testCases.TC_loginDDT_003" time="8.552"/>
-  <testcase name="addNewCustTest" classname="com.inetbanking.testCases.TC_addNewCustomer_004" time="31.932"/>
+  <testcase name="logintest" classname="com.inetbanking.testCases.TC_LoginTest_001" time="2.22"/>
+  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="5.919"/>
+  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="4.78"/>
+  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="25.225"/>
+  <testcase name="loginDDT" classname="com.inetbanking.testCases.TC_loginDDT_002" time="4.088"/>
 </testsuite>

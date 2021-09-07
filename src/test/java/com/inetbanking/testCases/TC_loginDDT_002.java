@@ -13,14 +13,14 @@ public class TC_loginDDT_002 extends baseClass{
 	
 
 	@Test(dataProvider="LoginData")
-	public void loginDDT(String user, String password) throws IOException {
+	public void loginDDT(String uname, String pwd) throws IOException, InterruptedException {
 		LoginPage lp = new LoginPage(driver);
-		lp.setUserName(user);
-		lp.setPassword(password);
+		lp.setUserName(uname);
+		lp.setPassword(pwd);
 		lp.clickSubmit();
 		
-		if(isAlertPresent()==true) {	
-			captureScreen(driver, "TC_loginDDT_002");
+		if(isAlertPresent()==true) {
+			captureScreen(driver, "loginDDT");
 			driver.switchTo().alert().accept();
 			driver.switchTo().defaultContent();
 			Assert.assertTrue(false);
@@ -51,7 +51,7 @@ public class TC_loginDDT_002 extends baseClass{
 		String path = System.getProperty("user.dir")+"/src/test/java/com/inetbanking/testData/LoginData.xlsx";
 		
 		int rowNum = XLUtils.getRowCount(path, "Sheet1");
-		int colNum = XLUtils.getColCount(path, "Sheet1", 1);
+		int colNum = XLUtils.getColCount(path, "Sheet1", 0);
 		
 		String loginData[][] = new String[rowNum][colNum];
 		

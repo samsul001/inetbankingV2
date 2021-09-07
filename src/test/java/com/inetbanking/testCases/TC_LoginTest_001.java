@@ -15,7 +15,7 @@ import com.inetbanking.pageObjects.LoginPage;
 public class TC_LoginTest_001 extends baseClass {
 
 	@Test
-	public void logintest() throws IOException {
+	public void logintest() throws IOException, InterruptedException {
 		LoginPage lp = new LoginPage(driver);		
 		lp.setUserName(username);
 		lp.setPassword(password);
@@ -28,16 +28,17 @@ public class TC_LoginTest_001 extends baseClass {
 		else {
 			captureScreen(driver, "logintest");
 			Assert.assertTrue(false);	
-			
+
 		}
 	}
-	 public void takeScreenshots(WebDriver driver ,String tname) throws IOException {
-		 
-		 TakesScreenshot ts = (TakesScreenshot) driver;
-		 File source = ts.getScreenshotAs(OutputType.FILE);
-		 File target = new File(System.getProperty("user.dir")+tname+".png");
-		 FileUtils.copyFile(source, target);
-		 System.out.println("screenshot taken");
-	 }
-	 
+	public void takeScreenshots(WebDriver driver ,String tname) throws IOException {
+		/*String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); 
+			String screenShotName = tname+"-"+timeStamp;*/
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File target = new File(System.getProperty("user.dir")+"/Screenshots/"+tname+".png");
+		FileUtils.copyFile(source, target);
+		System.out.println("screenshot taken");
+	}
+
 }
