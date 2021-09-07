@@ -13,6 +13,7 @@
 		<classes>
 			<class name="com.inetbanking.testCases.TC_LoginTest_001"/>
 			<class name="com.inetbanking.testCases.TC_loginDDT_002"/>
+			<class name="com.inetbanking.testCases.TC_loginDDT_003"/>
 					
 		</classes>
 
