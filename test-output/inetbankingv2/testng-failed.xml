@@ -5,15 +5,15 @@
     <listener class-name="com.inetbanking.utilities.Reporting"/>
   </listeners>
   <test thread-count="5" name="banking Apptest(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.inetbanking.testCases.TC_loginDDT_003">
+      <class name="com.inetbanking.testCases.TC_loginDDT_002">
         <methods>
           <include name="setup"/>
-          <include name="loginDDT3" invocation-numbers="0 1 2 3"/>
           <include name="teardown"/>
+          <include name="loginDDT"/>
         </methods>
-      </class> <!-- com.inetbanking.testCases.TC_loginDDT_003 -->
+      </class> <!-- com.inetbanking.testCases.TC_loginDDT_002 -->
     </classes>
   </test> <!-- banking Apptest(failed) -->
 </suite> <!-- Failed suite [inetbankingv2] -->

@@ -52,6 +52,8 @@ public class TC_loginDDT_002 extends baseClass{
 		
 		int rowNum = XLUtils.getRowCount(path, "Sheet1");
 		int colNum = XLUtils.getColCount(path, "Sheet1", 0);
+		System.out.println(rowNum);
+		System.out.println(colNum);
 		
 		String loginData[][] = new String[rowNum][colNum];
 		
